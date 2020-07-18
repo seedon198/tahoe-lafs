@@ -454,6 +454,7 @@ jobs:
       - run:
           name: "Build image"
           command: |
+            set -x
             docker \
                 build \
                 --build-arg TAG=${TAG} \
